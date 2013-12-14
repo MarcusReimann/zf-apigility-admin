@@ -23,7 +23,7 @@ abstract class AbstractPluginManagerModelTest extends TestCase
     public function testFetchAllReturnsListOfAvailablePlugins()
     {
         $allServices = $this->plugins->getRegisteredServices();
-        $validators  = [];
+        $validators  = array();
         foreach ($allServices as $key => $services) {
             $validators += $services;
         }

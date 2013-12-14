@@ -743,8 +743,8 @@ class RestServiceModel implements EventManagerAwareInterface
         $service = $original->controllerServiceName;
         $baseKey = 'zf-hal.metadata_map.';
 
-        $entityUpdate     = [];
-        $collectionUpdate = [];
+        $entityUpdate     = array();
+        $collectionUpdate = array();
         if ($update->identifierName) {
             $entityUpdate['identifier_name']     = $update->identifierName;
             $collectionUpdate['identifier_name'] = $update->identifierName;

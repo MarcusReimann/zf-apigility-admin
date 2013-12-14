@@ -50,7 +50,7 @@ class AbstractPluginManagerModel
             return $this->plugins;
         }
 
-        $this->plugins  = [];
+        $this->plugins  = array();
         foreach ($this->pluginManager->getRegisteredServices() as $key => $services) {
             $this->plugins += $services;
         }
