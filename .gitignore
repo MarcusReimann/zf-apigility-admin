@@ -14,3 +14,4 @@ vendor/rwoverdijk/
 vendor/symfony/
 vendor/zendframework/
 vendor/zfcampus/
+.idea/
